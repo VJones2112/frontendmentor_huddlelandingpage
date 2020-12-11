@@ -5,48 +5,41 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;    
 }
 
 body {
-/*    background-color: hsl(300, 69%, 71%);*/
+    font-family: 'Poppins', sans-serif;
     width: 100%;
-/*    margin: 0 auto;*/
     height: 100vh;
     text-align: center;
     color: #fff;
     background: url(images/bg-desktop.svg) no-repeat center top;
     background-color: hsl(257, 40%, 49%);
-
 }
 
-.contentContainer { width: 90vw; margin: 0 auto;}
+.contentContainer { 
+    width: 90vw; 
+    margin: 0 auto; 
+    overflow: hidden;
+}
 
-.header { text-align: left; margin: 20px auto; width: 80vw; }
+.header { 
+    text-align: left; 
+    margin: 20px auto; 
+    width: 80vw; 
+}
 .header img{ height: 40px; }
 
-.main {
-    
-/*    display: flex;*/
-}
-/*.imgContainer, .textContainer { flex: 1; }*/
-.imgContainer img { width: 80vw; margin-top: 40px; }
-
-.imgContainer { 
-/*    margin: auto;*/
-/*    position: relative;*/
-}
+.imgContainer img { width: 60vw; margin-top: 40px; }
 
 .textContainer {
     width: 86%;
     margin: 0 auto;
-/*    border: 1px solid red;*/
 }
 
 .textContainer p {
     line-height: 165%;
-/*    font-weight: 100;*/
     margin-top: 15px;
 }
 
@@ -59,17 +52,19 @@ body {
     box-shadow: 2px 3px 7px hsl(257, 41%, 32%);
     margin-top: 20px;
     margin-bottom: 40px;
-    color: hsla(257, 40%, 49%, 0.57);
+    color: hsla(257, 40%, 49%, 0.87);
+    font-size: 105%;
 }
+
 .register:hover, .register:active {
     background-color: hsl(300, 69%, 71%);
     color: #fff;
+    cursor: pointer;
 }
 
 .social{
     width: 90vw;
     margin-top: 20px;
-/*    text-align: center;*/
 }
 .fab {
     color: #fff;
@@ -84,6 +79,7 @@ body {
 .social i:hover, i:active {
     border-color: hsl(300, 69%, 71%);
     color: hsl(300, 69%, 71%);
+    cursor: pointer;
 }
 
 .attribution {
@@ -96,20 +92,6 @@ body {
     color: #fff;
 }
 
-/*
-body::before, body::after {
-    position: absolute;
-    content: '';
-    width: 100vw;
-    height: 100vh;
-}
-
-body::before {
-    background: url(images/bg-mobile.svg) no-repeat;
-    background-color: hsl(257, 40%, 49%);
-    top: -20%;
-    left: 0%;
-}*/
 
 @media screen and (max-width: 555px) {
     body {
@@ -131,8 +113,8 @@ body::before {
         align-items: center;      
     }
     .register { width: 200px; padding: 10px;}
-    .social {text-align: right; max-width: 1240px;}
-    .fab { padding: 6px;
-/*    margin: 5px;*/}
+    .social {text-align: right; max-width: 1240px; margin-top: 15px; }
+    .fab { padding: 6px;}
     .fab:first-child {padding: 6px 8px;}
+    footer {position: relative; bottom: 20px;}
 }
